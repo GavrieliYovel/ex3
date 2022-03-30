@@ -185,7 +185,7 @@ header, body, nav, footer, main, section {
     background: #517A8D;
 }
 
-.container {
+#container {
     margin:0px 30px;
 }
 #box1Layout2 {
@@ -196,15 +196,16 @@ header, body, nav, footer, main, section {
     margin-bottom: 48px;
 }
 
-
-#box1blank {
-    width:338px;
-    height:337px;
-    background: #000000;
+#container2 {
+    height: 676px;
+    width: 338px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 
-.left {
+#left {
     height: 1687px;
     width: 339px;
     background: #FFCDD2;
@@ -235,8 +236,14 @@ header, body, nav, footer, main, section {
     background: #C0D0E5;
 }
 
-#box2blank {
-    height: 1124px;
-    width: 128px;
-    background: #FFCDD2;
+#leftUP {
+    display: flex;
+    align-items: flex-end;
+}
+
+#leftDown {
+    display: flex;
+    height: 1285px;
+    justify-items: flex-end;
+    align-items: flex-end;
 }
