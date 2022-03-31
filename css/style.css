@@ -100,16 +100,16 @@ header, body, nav, footer, main, section {
 }
 
 #box2 {
-    height: 338px;
-    width: 338px;
+    height: 389px;
+    width: 335px;
     background-color: #517A8D;
 }
 
 #box3 {
     margin-left: 25px;
-    height: 389px;
-    width: 335px;
-    background-color: #517A8D; 
+    height: 338px;
+    width: 338px;
+    background-color: #517A8D;
 }
 
 #wrapper footer {
