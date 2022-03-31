@@ -46,9 +46,6 @@ header, body, nav, footer, main, section {
 }
 
 .navStyle  li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 242px;
     height: 57px;
     background-color: #FFCDD2;
@@ -56,20 +53,26 @@ header, body, nav, footer, main, section {
 
 .navStyle  a {
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #000000;
+    width: 242px;
+    height: 57px;
 }
 
 .navStyle  li:hover{
     background-color: #B94A48;
 }
 
-#selected li{
+#selected{
     background-color: #B94A48;
     width: 242px;
     height: 57px;
+    
 }
 
-#selected {
+#selected a{
     color: #FFFFFF;
 }
 
@@ -159,6 +162,9 @@ header, body, nav, footer, main, section {
 .navStyle2 ul a {
     text-decoration: none;
     color:#000000;
+    height: 132px;
+    line-height: 132px;
+    width: 100%;
 }
 
 .navStyle2 ul li:hover {
