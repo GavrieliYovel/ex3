@@ -255,3 +255,158 @@ header, body, nav, footer, main, section {
     justify-items: flex-end;
     align-items: flex-end;
 }
+
+/* layout3 */
+
+#layout3 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFFFFF;
+}
+#wrapperLayout3 {
+    margin: 0px auto;
+    width: 1000px;
+}
+
+.headerLayout3 {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+}
+
+.headerLayout3 img {
+    align-self: flex-start;
+    position: relative;
+    top: 39px;
+    left: 37px;
+}
+
+#btnContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: #FFFFFF;
+}
+
+#btnLayout3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 86px;
+    height: 86px;
+    background: none;
+    border: none;
+    font-size: 100%;
+    color: #FFFFFF;
+}
+.navStyle3 {
+    align-self: flex-end;
+    
+}
+
+.navStyle3  ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.navStyle3  li {
+    width: 167px;
+    height: 62px;
+    background-color: #FFCDD2;
+}
+
+.navStyle3  a {
+    text-decoration: none;
+    color: #000000;
+    width: 167px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navStyle3 ul li:hover {
+    background-color: #B94A48;
+    width: 100%;
+}
+
+#selected3{
+    background-color: #B94A48;
+    width:100%;
+}
+
+.topPage {
+    display: flex;
+} 
+
+.topPage section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+}
+
+.topPage section div {
+    background-color: #000000;
+    width: 250px;
+    height: 250px;
+}
+
+#opacity25 {
+    opacity: 0.25;
+}
+
+#opacity50 {
+    opacity: 0.5;
+}
+
+#opacity75 {
+    opacity: 0.75;
+}
+
+#opacity0 {
+    opacity: 0;
+}
+
+#dropZone {
+    width: 1000px;
+    background-color: #517A8D;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divStyleLayout3 :hover {
+    background-color: #B94A48;
+}
+
+
+#wrapperLayout3 footer {
+    background-color: #D6D6D6;
+    height: 120px;
+}
+
+@media ( max-width : 1000px) {
+    .topPage section {
+        display: none;
+    }
+
+    #dropZone {
+        width: 500px;
+    }
+
+    #wrapperLayout3 {
+        width: 500px;
+        margin: 0px auto;
+    }
+
+    .headerLayout3 img {
+        align-self: center;
+        left: 0px;
+
+    }
+}
