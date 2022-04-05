@@ -1,14 +1,14 @@
 (() => {
-    let counter = 8;
+    let counter = 40;
     let opacityLevel = 1;
     while(counter)
     {
         let div = document.createElement("div");
         div.style.width = "250px";
         div.style.height = "250px";
-        div.style.backgroundColor = "black";
+        div.style.backgroundColor = "white";
         div.style.opacity = opacityLevel;
-        div.className = 'divStyleLayout3';
+        div.className = "divStyleLayout3";
 
         document.getElementById("dropZone").appendChild(div);
 
@@ -24,10 +24,10 @@
     console.log(divChild);
     for (let i = 0; i < divChild.length; i++) { 
         divChild[i].onclick = function () {
-            if(this.style.backgroundColor === "black")                                
+            if(this.style.backgroundColor === "white")                                
                 this.style.backgroundColor = "red";
             else
-                this.style.backgroundColor ="black";
+                this.style.backgroundColor ="white";
         }
     }
 
@@ -39,33 +39,40 @@
         if(firstDiv.children.length === 0)
         {
             let pDiv = document.createElement("p");
-            pDiv.style.font = "50px";
+            pDiv.style.fontSize = "50px";
             pDiv.innerHTML = "Hello";
-            pDiv.style.color = "white";
+            pDiv.style.color = "black";
             document.getElementById("dropZone").firstChild.appendChild(pDiv);
-            let btn = document.createElement("button");
-            btn.style.width = "86px";
-            btn.style.height = "86px";
-            btn.style.background = "none";
-            btn.style.border = "none";
-            btn.innerHTML = "reset"
-            btn.style.fontSize = "40px";
-            btn.style.color = "white";
-            document.getElementById("btnContainer").appendChild(btn);
+            document.getElementById("btnReset").style.visibility = "visible";
         }
-        // if(firstDiv.style.width !== "500px" )
-        // {
-        //     firstDiv.style.width += 25;
-        //     firstDiv.style.height += 25;
-        // }
-        // else
-        // {
-
-            
-        // }
-        console.log(firstDiv.children.length);
-
+        else
+        {
+            firstP = firstDiv.firstChild;
+            let size = parseFloat(firstP.style.fontSize) + 10;
+            console.log(size)
+            console.log("hello")
+            if(size !== 110)
+            {
+                firstP.style.fontSize = size + 'px';
+            } 
+            else
+            {
+                document.getElementById("btnLayout3").style.visibility = "hidden";
+            }
+        }
     }
 
 })();
 
+(() => {
+    document.getElementById("btnReset").onclick = function() {
+        console.log("hello");
+        if(document.getElementById("btnLayout3").style.visibility === "hidden")
+            document.getElementById("btnLayout3").style.visibility = "visible";
+        document.getElementById("dropZone").firstChild.firstChild.remove();
+        document.getElementById("btnReset").style.visibility = "hidden";
+
+    }
+    
+
+})();
