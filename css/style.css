@@ -399,8 +399,13 @@ header, body, nav, footer, main, section {
     flex-wrap: wrap;
 }
 
+.divStyleLayout3 {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+}
 .divStyleLayout3:hover {
-    background-color: red !important;
+    background-color: red;
 }
 
 

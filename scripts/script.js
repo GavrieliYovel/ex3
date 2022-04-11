@@ -4,9 +4,6 @@
     while(counter)
     {
         let div = document.createElement("div");
-        div.style.width = "250px";
-        div.style.height = "250px";
-        div.style.backgroundColor = "white";
         div.style.opacity = opacityLevel;
         div.className = "divStyleLayout3";
 
@@ -24,10 +21,10 @@
     console.log(divChild);
     for (let i = 0; i < divChild.length; i++) { 
         divChild[i].onclick = function () {
-            if(this.style.backgroundColor === "white")                                
-                this.style.backgroundColor = "red";
+            if(this.style.backgroundColor === "red")                               
+                this.style.backgroundColor = null;
             else
-                this.style.backgroundColor ="white";
+                this.style.backgroundColor = "red";
         }
     }
 
@@ -42,15 +39,13 @@
             pDiv.style.fontSize = "50px";
             pDiv.innerHTML = "Hello";
             pDiv.style.color = "black";
-            document.getElementById("dropZone").firstChild.appendChild(pDiv);
+            firstDiv.appendChild(pDiv);
             document.getElementById("btnReset").style.visibility = "visible";
         }
         else
         {
-            firstP = firstDiv.firstChild;
+            let firstP = firstDiv.firstChild;
             let size = parseFloat(firstP.style.fontSize) + 10;
-            console.log(size)
-            console.log("hello")
             if(size !== 110)
             {
                 firstP.style.fontSize = size + 'px';
@@ -74,5 +69,4 @@
 
     }
     
-
 })();
