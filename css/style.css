@@ -301,7 +301,8 @@ header, body, nav, footer, main, section {
     height: 86px;
     background: none;
     border: none;
-    font-size: 175px;
+    font-size: 100px;
+    line-height: 0px;
     color: #FFFFFF;
 }
 
@@ -316,6 +317,7 @@ header, body, nav, footer, main, section {
     font-size: 40px;
     color: #FFFFFF;
     visibility: hidden;
+    
 }
 .navStyle3 {
     align-self: flex-end;
