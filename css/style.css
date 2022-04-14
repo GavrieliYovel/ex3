@@ -348,12 +348,10 @@ header, body, nav, footer, main, section {
 
 .navStyle3 ul li:hover {
     background-color: #B94A48;
-    width: 100%;
 }
 
 #selected3{
     background-color: #B94A48;
-    width:100%;
 }
 
 .topPage {
@@ -421,11 +419,44 @@ header, body, nav, footer, main, section {
     }
 
     #wrapperLayout3 {
-        max-width: 500px;
+        width: 500px;
     }
 
     #logo {
         align-self: center;
         left: 0px;
     }
+
+}
+
+@media only screen and ( max-width : 500px) {
+
+    #wrapperLayout3 {
+        width: 100%;
+    }
+
+    .divStyleLayout3 {
+        width: 50%;
+        overflow: hidden;
+    }
+
+    .headerLayout3 {
+        width: 100%;
+    }
+    .navStyle3{
+        width:100%;
+    }
+    .navStyle3 ul {
+        width:100%;
+    }
+
+    .navStyle3 ul li {
+        width: 33.33%;
+    } 
+    .navStyle3 a {
+        width: 100%;
+    }
+   
+
+
 }

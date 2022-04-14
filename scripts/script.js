@@ -41,7 +41,7 @@ function plusButton() {
         if(firstDiv.children.length === 0)
         {
             let pDiv = document.createElement("p");
-            pDiv.style.fontSize = "50px";
+            pDiv.style.fontSize = "40px";
             pDiv.innerHTML = "Hello";
             pDiv.style.color = "black";
             firstDiv.appendChild(pDiv);
