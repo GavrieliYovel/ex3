@@ -372,7 +372,7 @@ header, body, nav, footer, main, section {
 }
 
 .topPage section div:hover {
-    background-color: red;
+    background-color: blue;
 }
 
 #opacity25 {
@@ -404,7 +404,7 @@ header, body, nav, footer, main, section {
     background-color: white;
 }
 .divStyleLayout3:hover {
-    background-color: red;
+    background-color: blue;
 }
 
 
